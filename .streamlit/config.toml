@@ -1,0 +1,13 @@
+[theme]
+base = "light"
+primaryColor = "#1f77b4"          # Blue for interactive elements
+backgroundColor = "#ffffff"        # White background
+secondaryBackgroundColor = "#f0f2f6"  # Light gray for sidebars
+textColor = "#262730"             # Dark text
+
+[server]
+headless = true
+port = 8501
+
+[browser]
+gatherUsageStats = false
