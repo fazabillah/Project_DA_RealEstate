@@ -59,9 +59,14 @@ st.markdown("""
 # ENCHANCE LINE CHART SECTION
 
 st.subheader("🎨 Enhanced Line Chart")
-fig_enhanced = px.line(monthly_data, x='Date', y='Sale_Amount', 
-                      title='Real Estate: 4-Year Market Evolution',
-                      color_discrete_sequence=['#2E86AB'])
+fig_enhanced = px.line(
+    monthly_data, 
+    x='Date', 
+    y='Sale_Amount', 
+    title='Real Estate: 4-Year Market Evolution',
+    color_discrete_sequence=['#2E86AB']
+)
+fig_enhanced.update_layout(title_x=0.0)
 
 # Add key annotations (box only, no arrow)
 median_price = monthly_data['Sale_Amount'].median()
